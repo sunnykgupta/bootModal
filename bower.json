@@ -1,6 +1,18 @@
 {
     "name": "bootModal",
     "version": "0.0.1",
+    "ignore": [
+        "source",
+        "spec",
+        ".bowerrc",
+        ".gitignore",
+        ".jshintignore",
+        ".jshintrc",
+        "bower.json",
+        "gruntfile.js",
+        "package.json",
+        "README.md"
+    ],
     "dependencies": {
         "bootstrap": ">=3.3.0"
     }
