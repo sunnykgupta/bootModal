@@ -38,7 +38,7 @@
   $.bootModal = function(title, body, options) {
     options = $.extend(true, {}, defaultOptions, options);
 
-    var close = '<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" class="hem-icon close-icon"></span><span class="sr-only">Close</span></button>'
+    var close = '<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" class="fa fa-times close-icon"></span><span class="sr-only">Close</span></button>'
         ,backdrop = options.hideOnBgClick ? true : 'static'
 
     var footer = '<div class="modal-footer clearfix">' +
