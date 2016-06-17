@@ -26,6 +26,7 @@
     primaryCallback: $.noop,
     secondaryCallback: $.noop,
     dismissCallback: $.noop,
+    validationCallback: $.noop,
     onShown: $.noop,
     onShow: $.noop,
     primaryText: "Ok",
@@ -117,6 +118,12 @@
                     options.dismissCallback();
                 }
                 $(this).remove();
+            })
+            .on('hide.bs.modal', function(e) {
+                var callbackValue = $(this).data("callback");
+                if(callbackValue != "primary" && callbackValue != "secondary"){
+                    options.validationCallback();
+                }
             });
   };
 }(jQuery));
